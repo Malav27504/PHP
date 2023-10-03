@@ -27,16 +27,10 @@ $conn = new mysqli($servername, $username, $password, $database);
 
 if (!$conn)
     {
-        die("Connection failed: ".mysqli_connect_error());
+        die("Connection Error : ".mysqli_connect_error());
     }
-
     $sql = "SELECT * FROM userdata";
-
     $result = mysqli_query($conn,$sql);
-    $num=mysqli_num_rows($result);
-
-        
-   
     while($row=mysqli_fetch_assoc($result))
     {
         echo "<p class='white'> ID : ".$row['id']. " </p>";
