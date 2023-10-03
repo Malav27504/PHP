@@ -16,11 +16,10 @@
 
 <?php
 
-//php code to display all the data from the data base 
 
 $servername="localhost";
 $username="root";
-$password=NULL;
+$password="admin";
 $database="phpassignment1";
 
 
@@ -47,6 +46,6 @@ if (!$conn)
         echo "<p class='white'> Mobile No : ".$row['mobile_no']. " </p> <br>";
     
     }
-        ?> 
+?> 
 
-        </table>
+        
